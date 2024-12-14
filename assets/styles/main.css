@@ -1,0 +1,272 @@
+/* Custom font rules */
+
+@font-face {
+
+  font-family: 'MyCustomFont'; /* This is the name you'll use to reference the font */
+
+  src: url('../fonts/Press_Start_2P/PressStart2P-Regular.ttf') format('truetype'); /* Path to the .ttf file */
+
+  font-weight: normal; /* Optional, specify the weight if necessary */
+
+  font-style: normal; /* Optional, specify the style if necessary */
+
+}
+
+/* Reset margin and padding to remove any default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  background-image: url('../media/images/background_landing_page.jpg');
+  background-size: cover;  /* Ensures the image covers the entire page */
+  background-position: center center;  /* Centers the image */
+  background-attachment: fixed;  /* Keeps the image fixed during scrolling */
+  color: white;  /* Makes text more visible on a dark background (optional) */
+  /*font-family: 'MyCustomFont', sans-serif; */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  /* Align items to the top */
+  overflow-y: auto;  /* Enables vertical scrolling */
+  min-height: 100vh;  /* Ensures the body takes at least 100% of the viewport height */
+
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: 25px;
+  color: white; /* Set the text color */
+
+  text-shadow: 
+
+    1px 1px 0px black,    /* Horizontal shadow */
+
+    -1px -1px 0px black,  /* Diagonal shadow */
+
+    1px -1px 0px black,   /* Diagonal shadow */
+
+    -1px 1px 0px black;   /* Diagonal shadow */
+}
+a {
+  color:#3498db;
+}
+a:hover {
+  color:white
+}
+/* Container for the sections */
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px;  /* Optional: Adds padding to the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* Ensures sections are spaced at the top */
+  margin-top: 20px;  /* Adds space from the top of the viewport */
+}
+
+/* Style for each section */
+.section {
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0;
+  background-color: transparent;  /* Semi-transparent background for sections */
+  border-radius: 8px;
+  flex-shrink: 0;  /* Prevent shrinking of sections */
+}
+
+/* Section 1 - Gradient Line (Black to Red) */
+#section1 {
+  border-top: 5px solid transparent;  /* Makes space for the gradient line */
+  background-image: linear-gradient(to right, #23CA9C, #1F53B9);  /* Gradient from black to red */
+  background-position: top;
+  background-size: 100% 5px;  /* Make the gradient 5px high */
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+/* Section 2 - Gradient Line (Black to Red) */
+#section2 {
+  border-top: 5px solid transparent;  /* Makes space for the gradient line */
+  background-image: linear-gradient(to right, #23CA9C, #1F53B9);  /* Gradient from black to red */
+  background-position: top;
+  background-size: 100% 5px;  /* Make the gradient 5px high */
+  background-repeat: no-repeat;
+}
+
+/* Section 3 - Gradient Line (Black to Red) */
+#section3 {
+  border-top: 5px solid transparent;  /* Makes space for the gradient line */
+  background-image: repeating-linear-gradient(45deg, #3498db, #3498db 10px, #ecf0f1 10px, #ecf0f1 20px);  /* Gradient from blue to light gray */
+  background-position: top;
+  background-size: 100% 5px;  /* Make the gradient 5px high */
+  background-repeat: no-repeat;
+  position: relative;  /* So the pseudo-element is positioned correctly */
+}
+
+#section3::after {
+  content: "";  /* Create an empty element */
+  position: absolute;  /* Position it absolutely */
+  left: 0;  /* Align it to the left edge of section3 */
+  bottom: -5px;  /* Position it just below section3 */
+  width: 100%;  /* Make it span the full width of section3 */
+  height: 5px;  /* Height of the line */
+  background-image: repeating-linear-gradient(45deg, #3498db, #3498db 10px, #ecf0f1 10px, #ecf0f1 20px);  /* Same gradient */
+  background-size: 100% 5px;  /* Make the gradient 5px high */
+  background-repeat: repeat;  /* Repeat the gradient horizontally */
+}
+
+/* Optional: Additional styles for headings */
+h2 {
+  color: #333;
+}
+
+/* Footer Styles */
+footer {
+  position: fixed;  /* Keeps the footer in a fixed position */
+  bottom: 0;        /* Aligns it to the bottom of the page */
+  right: 0;         /* Aligns it to the right */
+  padding: 10px 20px;
+  background-color: transparent; /* Semi-transparent dark background */
+  color: white;     /* Text color */
+  font-size: 10px;   /* Smaller font size for the footer text */
+  font-family: 'MyCustomFont', sans-serif;
+  text-align: right; /* Aligns text to the right */
+  z-index: 10;       /* Ensures the footer stays above other content */
+}
+
+/* Optional: Additional styles for footer text */
+.footer-text {
+  margin: 0;
+}
+/* Random GIFs styling */
+.random-gif {
+    position: absolute;
+    z-index: 999;  /* Ensure gifs appear above other content */
+    width: 100px;  /* Adjust the size of the gifs */
+    height: 100px;  /* Adjust the size of the gifs */
+}
+
+/* Optional: If you want to add a hover effect or any animation */
+.random-gif:hover {
+    transform: scale(1.1);  /* Slight zoom on hover */
+    transition: transform 0.3s ease-in-out;
+}/* Random GIFs styling */
+.random-gif {
+    position: absolute;
+    z-index: 999;  /* Ensure gifs appear above other content */
+    width: 100px;  /* Adjust the size of the gifs */
+    height: 100px;  /* Adjust the size of the gifs */
+}
+
+/* Optional: If you want to add a hover effect or any animation */
+.random-gif:hover {
+    transform: scale(1.1);  /* Slight zoom on hover */
+    transition: transform 0.3s ease-in-out;
+}/* Random GIFs styling */
+.random-gif {
+    position: absolute;
+    z-index: 999;  /* Ensure gifs appear above other content */
+    width: 100px;  /* Adjust the size of the gifs */
+    height: 100px;  /* Adjust the size of the gifs */
+}
+
+/* Optional: If you want to add a hover effect or any animation */
+.random-gif:hover {
+    transform: scale(1.1);  /* Slight zoom on hover */
+    transition: transform 0.3s ease-in-out;
+}/* Random GIFs styling */
+.random-gif {
+    position: absolute;
+    z-index: 999;  /* Ensure gifs appear above other content */
+    width: 100px;  /* Adjust the size of the gifs */
+    height: 100px;  /* Adjust the size of the gifs */
+}
+
+/* Optional: If you want to add a hover effect or any animation */
+.random-gif:hover {
+    transform: scale(1.1);  /* Slight zoom on hover */
+    transition: transform 0.3s ease-in-out;
+}/* Random GIFs styling */
+.random-gif {
+  position: absolute;
+  z-index: 999;  /* Ensure gifs appear above other content */
+  width: 100px;  /* Adjust the size of the gifs */
+  height: 100px;  /* Adjust the size of the gifs */
+}
+
+/* Optional: If you want to add a hover effect or any animation */
+.random-gif:hover {
+  transform: scale(1.1);  /* Slight zoom on hover */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* 90s-style message box */
+.popup {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #999999;
+  border: 2px solid #000080;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px;
+  color: #000080;
+  z-index: 999;
+  text-shadow: 
+
+  0px 0px 0px black,    /* Horizontal shadow */
+
+  0px 0px 0px black,  /* Diagonal shadow */
+
+  0px 0px 0px black,   /* Diagonal shadow */
+
+  0px 0px 0px black;   /* Diagonal shadow */
+
+}
+
+.popup-header {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #000080;
+  padding: 5px;
+  text-align: center;
+}
+
+.popup-body {
+  padding: 10px;
+  text-align: center;
+}
+
+.popup-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.popup-footer button {
+  background-color: #000080;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.popup-footer button:hover {
+  background-color: #3498db;
+}
+
+th {
+  padding:20px
+}
+
+td {
+  text-align: center;
+}

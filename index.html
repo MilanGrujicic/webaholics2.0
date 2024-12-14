@@ -1,0 +1,69 @@
+<!-- Author: Milan Grujicic -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Webaholics 2.0</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/styles/main.css'>
+</head>
+
+<body>
+    <div class="container">
+        <section class="section" id="section1">
+            <img alt="webaholics" src="assets/media/images/webaholics_h1_1.gif">
+            <p>Welcome to the Webaholics 2.0 Page!</p>
+            <a href="https://github.com/MilanGrujicic">Hi...</a>
+        </section>
+
+        <section class="section" id="section2">
+            <a href="assets/pages/top_50_links.html">The Webaholics Top 50 Links List!!!</a>
+            <a href="assets/pages/top_50_links.html"><img alt="webaholics" src="assets/media/images/top_50_links.png"></a>
+            <p>Check it out! <a href="javascript:void(0);" onclick="showPopup()">Add your favorite links</a> and see what others think is cool!</p>
+            <p>You control this Top 50 list, so put in the links that YOU like!</p>
+            <p>Think someone is abusing the list? Use the <a href="javascript:void(0);" onclick="showPopup()">Blacklist Forum</a> to let me know about it.</p>
+        </section>
+
+        <section class="section" id="section3">
+            <p>If you have not put an entry in the</p>
+            <a href="https://codedex.io" target="_blank"><img alt="webaholics" src="assets/media/images/support_group.png"></a>
+            <p>pages please do so by clicking on the <a href="https://codedex.io" target="_blank">Support Group logo!</a></p>
+        </section>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-header">
+          Under construction
+        </div>
+        <div class="popup-body">
+          <p>Hackathons can be stressful, this link is not working at the moment.</p>
+          <img src="assets/media/GIFs/VNUF.gif">
+        </div>
+        <div class="popup-footer">
+          <button onclick="closePopup()">Close</button>
+        </div>
+      </div>
+</body>
+
+<footer>
+    <p class="footer-text">Made with love by Milan Grujicic</p>
+</footer>
+
+<!-- Random GIF -->
+<div class="random-gif" id="gif1"><img src="assets/media/GIFs/error_fail.gif" alt="GIF 1"></div>
+
+<script src="assets/scripts/randomGifPositions.js"></script>
+<script>
+    // Function to show the popup
+    function showPopup() {
+      document.getElementById('popup').style.display = 'block';
+    }
+  
+    // Function to close the popup
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+</script>
+</html>
